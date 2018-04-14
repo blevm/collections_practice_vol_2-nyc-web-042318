@@ -1,11 +1,11 @@
 # your code goes here
-require "pry"
 
 def begins_with_r(array)
   array.all? do |item|
     item[0].downcase == ("r")
   end
 end
+
 
 def contain_a(array)
   array_of_a = []
@@ -17,6 +17,7 @@ def contain_a(array)
   array_of_a
 end
 
+
 def first_wa(array)
   array.each do |item|
     if item[0].downcase == "w"
@@ -27,6 +28,7 @@ def first_wa(array)
   end
 end
 
+
 def remove_non_strings(array)
   only_strings = []
   array.each do |item|
@@ -36,6 +38,7 @@ def remove_non_strings(array)
   end
   only_strings
 end
+
 
 def count_elements(array)
 final_list = Hash.new(0)
@@ -52,6 +55,7 @@ final_list = Hash.new(0)
   array.uniq
 
 end
+
 
 def merge_data(keys, data)
   merged = Array.new
@@ -75,7 +79,6 @@ def merge_data(keys, data)
    end
  end
 
-
 end
 
 def find_cool(array)
@@ -92,23 +95,18 @@ cool_array = []
 end
 
 
-
-
 def organize_schools(hash)
   list_by_place = {}
 
   hash.each do |school, school_location_hash|
     school_location_hash.each do |location, location_value|
       list_by_place[location_value] = []
-      list_by_place[location_value] << school
     end
   end
-  #hash.each do |school, school_location_hash|
-#    school_location_hash.each do |location, location_value|
-
-#    end
-#  end
-
-  binding.pry
+  hash.each do |school, school_location_hash|
+    school_location_hash.each do |location, location_value|
+      list_by_place[location_value] << school
+    end
+   end
 
 end
