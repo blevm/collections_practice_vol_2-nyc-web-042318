@@ -101,7 +101,7 @@ def organize_schools(hash)
     school_location_hash.each do |location, location_value|
       binding.pry
     end
-    
+
   end
 
 
