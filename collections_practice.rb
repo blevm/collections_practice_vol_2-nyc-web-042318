@@ -100,9 +100,14 @@ def organize_schools(hash)
   hash.each do |school, school_location_hash|
     school_location_hash.each do |location, location_value|
       list_by_place[location_value] = []
-
     end
   end
+  hash.each do |school, school_location_hash|
+    school_location_hash.each do |location, location_value|
+        list_by_place[location_value] << school
+    end
+  end
+  
   binding.pry
 
 end
