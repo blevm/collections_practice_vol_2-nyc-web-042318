@@ -84,6 +84,7 @@ def find_cool(array)
     person.each do |detail, detail_value|
       if detail_value == "cool"
         return person
+      end
     end
   end
 
