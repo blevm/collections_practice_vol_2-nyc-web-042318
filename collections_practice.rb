@@ -79,15 +79,16 @@ def merge_data(keys, data)
 end
 
 def find_cool(array)
+cool_array = []
 
   array.each do |person|
     person.each do |detail, detail_value|
       if detail_value == "cool"
-        return person
+        cool_array << person
       end
     end
   end
-
+cool_array
 end
 
 def organize_schools
