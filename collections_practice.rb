@@ -107,7 +107,7 @@ def organize_schools(hash)
         list_by_place[location_value] << school
     end
   end
-  
+
   binding.pry
 
 end
