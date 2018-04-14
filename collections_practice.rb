@@ -82,7 +82,8 @@ def find_cool(array)
 
   array.each do |person|
     person.each do |detail, detail_value|
-      binding.pry
+      if detail_value == "cool"
+        return person
     end
   end
 
