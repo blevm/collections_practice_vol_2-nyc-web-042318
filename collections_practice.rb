@@ -107,6 +107,6 @@ def organize_schools(hash)
     school_location_hash.each do |location, location_value|
       list_by_place[location_value] << school
     end
-   end
-
+  end
+  list_by_place
 end
