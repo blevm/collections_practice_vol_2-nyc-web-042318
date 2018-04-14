@@ -92,34 +92,13 @@ cool_array = []
 end
 
 
-let(:schools) {
-  {
-    "flatiron school bk" => {
-      :location => "NYC"
-    },
-    "flatiron school" => {
-      :location => "NYC"
-    },
-    "dev boot camp" => {
-      :location => "SF"
-    },
-    "dev boot camp chicago" => {
-      :location => "Chicago"
-    },
-    "general assembly" => {
-      :location => "NYC"
-    },
-    "Hack Reactor" => {
-      :location => "SF"
-    }
-  }
-}
+
 
 def organize_schools(hash)
 
   hash.each do |list, school_hash|
     binding.pry
   end
-  
+
 
 end
