@@ -88,7 +88,7 @@ cool_array = []
       end
     end
   end
-cool_array
+  cool_array
 end
 
 def organize_schools
